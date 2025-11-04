@@ -127,23 +127,27 @@ section h2::after {
 
 /* ===== TOP BAR ===== */
 .topbar {
-  background-color: var(--smalt);
-  color: var(--light-color);
+  background-color: #f3f7fa;
+  color: #1c1b1c;
   font-size: 0.95rem;
   letter-spacing: 0.3px;
 }
 
 .topbar i {
-  color: #ffffff;
+  color: #1c1b1c;
   font-size: 0.9rem;
 }
 
 .topbar a {
-  color: var(--light-color);
+  color: #1c1b1c;
   transition: color 0.3s ease;
 }
 
 .topbar a:hover {
+  color: var(--contrast-color);
+}
+
+.topbar i:hover {
   color: var(--contrast-color);
 }
 
@@ -869,8 +873,8 @@ section h2::after {
 
 /* ===== FOOTER SECTION ===== */
 .footer {
-  background: linear-gradient(135deg, var(--smalt) 0%, var(--venice-blue) 100%);
-  color: #fff; /* Use pure white for text */
+  background-color: #f3f7fa; /* Neutral dark gray, not blue */
+  color: #1c1b1c;
   position: relative;
   overflow: hidden;
   padding-top: 70px;
@@ -896,7 +900,7 @@ section h2::after {
 
 /* Headings */
 .footer h5 {
-  color: var(--half-baked) !important; /* Light blue headers */
+  color: #1c1b1c !important; /* Light blue headers */
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -904,7 +908,7 @@ section h2::after {
 }
 
 .footer h6 {
-  color: var(--catskill-white) !important; /* Very light blue for staff mail */
+  color: #1c1b1c !important; /* Very light blue for staff mail */
   transition: color 0.3s ease;
 }
 
@@ -914,7 +918,7 @@ section h2::after {
 
 /* Paragraph text */
 .footer p {
-  color: rgba(255, 255, 255, 0.8) !important; /* Lighter text for better readability */
+  color: rgba(28, 27, 28, 0.8) !important; /* Lighter text for better readability */
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -925,20 +929,20 @@ section h2::after {
 }
 
 .footer ul li {
-  color: rgba(255, 255, 255, 0.8) !important; /* Lighter text for better readability */
+  color: rgba(28, 27, 28, 0.8) !important; /* Lighter text for better readability */
   list-style: none;
   margin-bottom: 0.4rem;
 }
 
 /* Links */
 .footer a {
-   color: rgba(255, 255, 255, 0.8) !important; /* Lighter text for better readability */
+   color: rgba(28, 27, 28, 0.8) !important; /* Lighter text for better readability */
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer a:hover {
-  color: var(--half-baked) !important; /* Accent color on hover */
+  color: var(--primary-color) !important; /* Accent color on hover */
   transform: translateX(3px);
 }
 
