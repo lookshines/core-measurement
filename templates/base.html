@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.svg' %}">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+        <!-- Custome css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!-- Font Awesome-->
+        <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+
+    </head>
+    <body>
+
+        <div>
+            {% include 'nav.html' %}
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+        <!-- Contact Info Section -->
+        <section class="contactinfo position-relative" id="contactinfo">
+            <div class="container position-relative">
+                <div class="row justify-content-center text-center gx-4 gy-4 fade-up">
+
+                    <!-- Location -->
+                    <div class="col-12 col-md-4">
+                        <div class="contact-card p-4">
+                            <div class="icon-wrapper mb-3 position-relative">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h3 class="h5 fw-semibold mb-2">Lagos</h3>
+                            <p class="mb-0">
+                                13A, Forcados Road,<br>
+                                Apapa GRA,<br>
+                                Lagos, Nigeria.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-12 col-md-4">
+                        <div class="contact-card p-4">
+                        <div class="icon-wrapper mb-3 position-relative">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3 class="h5 fw-semibold mb-2">Email</h3>
+                        <p class="mb-0">info@coremeasurement.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-12 col-md-4">
+                        <div class="contact-card p-4">
+                        <div class="icon-wrapper mb-3 position-relative">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3 class="h5 fw-semibold mb-2">Phone</h3>
+                        <p class="mb-0">+234 807-056-9900</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Info Section -->
+    
+        <!-- Footer Section -->
+        <footer class="footer py-5" id="footer">
+            <div class="container-fluid">
+                <div class="row gy-4">
+
+                    <!-- Company Info -->
+                    <div class="col-12 col-md-4">
+                        <img src="{% static 'images/logo.svg' %}" alt="footer-logo" class="mb-3 px-4" style="max-width: 150px;">
+                        <p class="small mb-0 px-4">
+                        Core Measurement Limited is a Nigerian-owned oil and gas service company providing measurement, inspection, calibration, and metering solutions. 
+                        We ensure accuracy, transparency, and compliance through reliable partnerships and advanced technical expertise.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-6 col-md-4">
+                        <h5 class="fw-semibold mb-3">Quick Links</h5>
+                        <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">HSE</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Contact</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-6 col-md-4">
+                        <h5 class="fw-semibold mb-3">Contact</h5>
+                        <ul class="list-unstyled small mb-4">
+                            <li class="mb-2">
+                                Lagos<br>
+                                13A, Forcados Road, Apapa GRA, Lagos.
+                            </li>
+                            <li class="mb-2">info@coremeasurement.com</li>
+                            <li class="mb-0">+234 807-056-9900</li>
+                        </ul>
+
+                        <a href="https://mail.hostinger.com" target="_blank" class="text-decoration-none"><h6 class="fw-semibold">Staff Mail</h6></a>
+                    </div>
+
+                    </div>
+
+                    <!-- Footer Bottom -->
+                    <div class="row mt-4 border-top pt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">
+                            &copy; 2025 Core Measurement Limited | Powered by Core Measurement Limited 
+                            </p>
+                        </div>
+                    </div>
+
+            </div>
+        </footer>
+        <!-- End Footer Section -->
+
+        <button id="backToTop" class="btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/myscripts.js' %}"></script>
+    </body>
+</html>

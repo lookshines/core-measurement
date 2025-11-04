@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Services - Core Measurement Limited {% endblock %}
+
+{% block content %}
+    <!-- Banner Section -->
+    <div class="page-banner-area" style="background-image: url('{% static "images/banner/services.png" %}')";>
+        <div class="container-fluid text-center page-content">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Section -->
+    <section class="services-page py-5" id="services-page">
+        <div class="container-fluid text-center">
+            <!-- Header -->
+            <div class="row mb-4 px-5">
+                <h2 class="fw-semibold">Our Services</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center card-section">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Measurement, Calibration & Metering Solutions</h5>
+                            <p class="card-text">
+                            Accurate and traceable measurement of crude oil, refined products, and natural gas using internationally certified metering systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspection, Verification & Superintendence</h5>
+                            <p class="card-text">
+                            Independent inspection, sampling, testing, and certification of crude oil and gas cargoes to ensure fairness and contractual compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Production Monitoring & Facility Surveillance</h5>
+                            <p class="card-text">
+                            Real-time monitoring using smart instrumentation and telemetry for production optimization, emission tracking, and system integrity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Equipment Supply & Installation</h5>
+                            <p class="card-text">
+                            Supply and installation of flow meters, analyzers, SCADA systems, and other precision instruments sourced through our European partners.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Training & Technical Capacity Development</h5>
+                            <p class="card-text">
+                            Comprehensive training programs on meter operation, calibration, facility monitoring, and regulatory compliance for technical personnel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <!--<div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Laboratory Testing & Calibration</h5>
+                            <p class="card-text">
+                            State-of-the-art laboratory and field testing for crude oil, gas, minerals, and industrial products,
+                            including calibration of storage tanks, pipelines, and flow meters.
+                            </p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+    
+    <!-- Process Section -->
+    <section class="process py-5" id="process" style="background-image: url('{% static "images/process/process-bg.jpg" %}')">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-semibold mb-2">Our Process</h2>
+                <p class="mb-0 mx-auto" style="max-width: 700px;">
+                    Our service process is designed to ensure <strong>accuracy, transparency, and traceability</strong> in every measurement and inspection activity.  
+                    From initial evaluation to final certification, each stage is guided by international standards, technical integrity, and a commitment to operational excellence.
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="row justify-content-center align-items-stretch g-4 text-center fade-up">
+
+                <!-- Step 1 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Project Evaluation & Planning</h6>
+                            <p class="small mb-0">
+                                We begin by assessing client requirements, defining operational objectives, and identifying the most suitable metering and inspection solutions 
+                                in line with ISO, API, and OIML standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Field Inspection & Data Acquisition</h6>
+                            <p class="small mb-0">
+                                Our certified engineers and inspectors conduct on-site measurements, sampling, and verification at terminals, platforms, and pipelines — ensuring 
+                                accuracy, safety, and regulatory compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Calibration & Technical Validation</h6>
+                            <p class="small mb-0">
+                                Using internationally traceable calibration standards, we perform meter proving, system verification, and performance checks 
+                                to ensure reliable and traceable measurement results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Reporting & Certification</h6>
+                            <p class="small mb-0">
+                                We issue detailed, defensible reports and certifications backed by verified data, ensuring transparency, regulatory compliance, and confidence 
+                            in all custody transfer and production monitoring operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Process Section -->
+{% endblock %}

@@ -1,0 +1,306 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Core Measurement Limited {% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container-fluid">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'images/hero/hero-image-1.jpg' %}" class="d-block w-100" alt="vessel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/hero/hero-image-2.jpg' %}" class="d-block w-100" alt="oil-depot">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/hero/hero-image-3.jpg' %}" class="d-block w-100" alt="high-sea">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/hero/hero-image-4.jpg' %}" class="d-block w-100" alt="high-sea">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/hero/hero-image-5.jpg' %}" class="d-block w-100" alt="high-sea">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/hero/hero-image-6.jpg' %}" class="d-block w-100" alt="high-sea">
+                    </div>                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Service Section -->
+    <section class="services py-5" id="services">
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="row mb-4 px-5">
+                <div class="col-12 col-md-6">
+                    <h2 class="fw-semibold">Services</h2>
+                </div>
+            </div>
+
+            <div class="row align-items-start gy-5">
+                <!-- Left Column -->
+                <div class="col-lg-6 px-3">
+                    <p class="mb-4 px-5 fade-right">
+                        We deliver reliable inspection, testing, certification, and verification services across industries to ensure quality, safety, and compliance. Our expertise covers crude oil and gas inspection, bulk cargo verification, product certification, and shipping logistics. With advanced laboratories and experienced professionals, we provide accurate, transparent, and internationally compliant results that build trust and support seamless trade operations.
+                    </p>
+
+                    <!-- Image Grid -->
+                    <div class="row g-3 text-center px-5 image-group fade-up">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <img src="{% static 'images/services/service-image-1.jpg' %}" alt="Service Image 1" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <img src="{% static 'images/services/service-image-2.jpg' %}" alt="Service Image 2" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <img src="{% static 'images/services/service-image-3.jpg' %}" alt="Service Image 3" class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6 px-5">
+                    <ul class="list-unstyled list-group fade-up">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#">Measurement, Calibration & Metering Solutions</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#">Inspection, Verification & Superintendence</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#">Production Monitoring & Facility Surveillance</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#">Technical Equipment Supply & Installation</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fa-solid fa-clipboard-check me-3"></i>
+                            <a href="#" class="">Training & Technical Capacity Development</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center gy-4">
+
+                <!-- Left Side (Image + Mission Text) -->
+                <div class="col-lg-6 position-relative">
+                    <div class="about-image" style="background-image: url('{% static "images/about/about.jpg" %}'); background-size: cover; background-position: center; min-height: 350px; border-radius: 6px;">
+                        <div class="px-4">
+                            <p class="lead fst-italic mb-0">
+                             We are driven by <strong>precision, transparency, and accountability</strong> — helping our clients achieve accurate production data, minimize losses, 
+                            meet regulatory requirements, and enhance operational efficiency across all measurement and monitoring processes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side (About Text) -->
+                <div class="right-side col-lg-6">
+                    <h2 class="mb-3">About Core Measurement Limited </h2>
+                    <div class="fade-left">
+                        <p class="mb-3 ">
+                        A Nigerian-owned oil and gas service company specializing in <strong>measurement, monitoring, inspection, calibration,</strong> and <strong>metering solutions</strong> for the upstream, midstream, and downstream sectors of the energy industry.
+                        </p>
+                        <p class="mb-3">
+                        With over three decades of combined industry experience, we have established ourselves as a trusted provider of <strong>technical assurance, operational reliability,</strong> and <strong>production accountability</strong> for both local and international energy stakeholders.
+                        </p>
+                        <p class="mb-0">
+                        Core Measurement also offers <strong>technical training programs</strong> covering meter operation, flow measurement, data management, and equipment maintenance — ensuring continuous skills development and compliance with global metrology and petroleum measurement standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+
+    <!-- Fun Fact Section -->
+    <section class="funfact py-5" id="funfact">
+        <div class="container">
+            <div class="row text-center gy-4">
+            
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=21>0</h1>
+                    <p class="mb-0">Completed Projects</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=32>0</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=15>0</h1>
+                    <p class="mb-0">Our Awards</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=3000>0</h1>
+                    <p class="mb-0">Satisfied Employees</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Fun Fact Section -->
+
+    <!-- Process Section -->
+    <section class="process py-5" id="process" style="background-image: url('{% static "images/process/process-bg.jpg" %}')">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-semibold mb-2">Our Process</h2>
+                <p class="mb-0 mx-auto" style="max-width: 700px;">
+                    Our service process is designed to ensure <strong>accuracy, transparency, and traceability</strong> in every measurement and inspection activity.  
+                    From initial evaluation to final certification, each stage is guided by international standards, technical integrity, and a commitment to operational excellence.
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="row justify-content-center align-items-stretch g-4 text-center fade-up">
+
+                <!-- Step 1 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Project Evaluation & Planning</h6>
+                            <p class="small mb-0">
+                                We begin by assessing client requirements, defining operational objectives, and identifying the most suitable metering and inspection solutions 
+                                in line with ISO, API, and OIML standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Field Inspection & Data Acquisition</h6>
+                            <p class="small mb-0">
+                                Our certified engineers and inspectors conduct on-site measurements, sampling, and verification at terminals, platforms, and pipelines — ensuring 
+                                accuracy, safety, and regulatory compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Calibration & Technical Validation</h6>
+                            <p class="small mb-0">
+                                Using internationally traceable calibration standards, we perform meter proving, system verification, and performance checks 
+                                to ensure reliable and traceable measurement results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="card flex-fill border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold mb-2">Reporting & Certification</h6>
+                            <p class="small mb-0">
+                                We issue detailed, defensible reports and certifications backed by verified data, ensuring transparency, regulatory compliance, and confidence 
+                            in all custody transfer and production monitoring operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Process Section -->
+
+    <!-- Contact Form Section -->
+    <section class="contactform py-5" id="contactform">
+        <div class="container">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="">Contact Us</h2>
+                <p class="mb-0">Leave us a message</p>
+            </div>
+
+            <div class="row align-items-center gy-4">
+            
+                <!-- Contact Form -->
+                <div class="col-12 col-lg-6 fade-right">
+                    <form class="p-3 border rounded" method="POST">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="{{form.fullname_id_for_label}}" class="form-label">Name</label>
+                        {{ form.fullname }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{form.email_id_for_label}}" class="form-label">Email</label>
+                        {{ form.email }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{form.phone_id_for_label}}" class="form-label">Phone</label>
+                        {{ form.phone }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{form.message_id_for_label}}" class="form-label">Message</label>
+                        {{ form.message }}
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-outline-secondary px-4">Send Message</button>
+                    </div>
+                    </form>
+                    {% if messages %}
+                        <div class="alert-messages">
+                            {% for message in messages %}
+                                <div class="alert alert-success">{{ message }}</div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Image or Contact Illustration -->
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="{% static 'images/contact-form/contact-us-img.png' %}" alt="Contact Illustration" class="img-fluid rounded fade-left" style="max-height: 400px;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Form Section -->
+
+{% endblock %}    

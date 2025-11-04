@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}HSE - Core Measurement Limited {% endblock %}
+
+{% block content %}
+    <!-- === BANNER SECTION === -->
+    <div class="page-banner-area" style="background-image: url('{% static "images/banner/hse.jpg" %}')";>
+        <div class="container-fluid text-center page-content">
+            <h2>HSE</h2>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>HSE</li>
+            </ul>
+        </div>
+    </div>
+    <!-- === END OF BANNER SECTION === -->
+
+    <!-- === HSE SECTION === -->
+    <section class="hse-page py-5" id="hse-page">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="fw-semibold">HSE</h2>
+                <h3 class="fw-normal text-uppercase">Health, Safety and Environment</h3>
+                <p class="lead text-muted">
+                    Building a culture of continuous improvement in Health, Safety, and Environmental performance.
+                </p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="hse-content">
+                <ul class="hse-list">
+                    <li>Ensure compliance with all applicable laws, regulations, and standards on health, safety, and environmental protection.</li>
+                    <li>Identify and mitigate potential hazards through proactive safety management and risk assessment.</li>
+                    <li>Encourage open communication and collaboration among employees, contractors, and stakeholders on HSE matters.</li>
+                    <li>Review and update HSE policies regularly to maintain effectiveness and relevance.</li>
+                    <li>Promote sustainability by minimizing resource consumption, waste generation, and emissions.</li>
+                    <li>Engage local communities and stakeholders to raise HSE awareness and contribute positively to host environments.</li>
+                    <li>
+                    Core Measurement Limited is committed to achieving excellence in HSE performance across all operations —
+                    from project planning and execution to reporting and review.
+                    </li>
+                </ul>
+
+                <p class="hse-note mt-4">
+                    By adhering to these principles, Core Measurement Limited  fosters a safe, healthy, and environmentally responsible workplace — enhancing the well-being of our people, communities, and clients.  
+                    <br><br>
+                    This HSE policy reflects our unwavering commitment to excellence, integrity, and sustainable operations, guiding all employees and stakeholders toward shared accountability in achieving our HSE goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}

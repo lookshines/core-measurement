@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact - Core Measurement Limited {% endblock %}
+
+{% block content %}
+    <!-- === BANNER SECTION === -->
+    <div class="page-banner-area" style="background-image: url('{% static "images/banner/contact.jpg" %}')";>
+        <div class="container-fluid text-center page-content">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <!-- === END OF BANNER SECTION === -->
+
+    <!-- Contact Form Section -->
+    <section class="contact-page py-5" id="contact-page">
+        <div class="container">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="">Contact Us</h2>
+                
+                <div class="container position-relative">
+                    <div class="row justify-content-center text-center gx-4 gy-4">
+
+                        <!-- Location -->
+                        <div class="col-12 col-md-4">
+                            <div class="contact-card p-4">
+                                <div class="icon-wrapper mb-3 position-relative">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <h3 class="h5 fw-semibold mb-2">Lagos</h3>
+                                <p class="mb-0">
+                                    13A, Forcados Road,<br>
+                                    Apapa GRA,<br>
+                                    Lagos, Nigeria.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12 col-md-4">
+                            <div class="contact-card p-4">
+                            <div class="icon-wrapper mb-3 position-relative">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h3 class="h5 fw-semibold mb-2">Email</h3>
+                            <p class="mb-0">info@coremeasurement.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col-12 col-md-4">
+                            <div class="contact-card p-4">
+                            <div class="icon-wrapper mb-3 position-relative">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h3 class="h5 fw-semibold mb-2">Phone</h3>
+                            <p class="mb-0">+234 807-056-9900</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row align-items-center gy-4">
+            
+                <!-- Contact Form -->
+                <div class="col-12 col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6036289904455!2d3.35144057475255!3d6.444910393546404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bc954d26203%3A0x21d55ea84afbab01!2s13a%20Forcados%20Rd%2C%20Apapa%20Quays%2C%20Lagos%20102272%2C%20Lagos!5e0!3m2!1sen!2sng!4v1761520169436!5m2!1sen!2sng" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+                <!-- Image or Contact Illustration -->
+                <div class="contactform col-12 col-lg-6">
+                    <form class="p-3 border rounded" method="POST">
+                    {% csrf_token %}
+                    <h3>Get in Touch</h3>
+                    <div class="mb-3">
+                        <label for="{{ form.fullname_id_for_label }}" class="form-label">Name</label>
+                        {{ form.fullname }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{ form.email_id_for_label }}" class="form-label">Email</label>
+                        {{ form.email }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{ form.phone_id_for_label }}" class="form-label">Phone</label>
+                        {{ form.phone }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{ form.message_id_for_label }}" class="form-label">Message</label>
+                        {{ form.message }}
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-outline-secondary px-4">Send Message</button>
+                    </div>
+                    </form>
+                    {% if messages %}
+                        <div class="alert-messages">
+                            {% for message in messages %}
+                                <div class="alert alert-success">{{ message }}</div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Form Section -->
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About us - Core Measurement Limited{% endblock %}
+
+{% block content %}
+    <div class="page-banner-area" style="background-image: url('{% static "images/banner/about-us.png" %}')";>
+        <div class="container-fluid text-center page-content">
+            <h2>About Us</h2>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center gy-4">
+
+                <!-- Left Side (Image + Mission Text) -->
+                <div class="col-lg-6 position-relative">
+                    <div class="about-image" style="background-image: url('{% static "images/about/about.jpg" %}'); background-size: cover; background-position: center; min-height: 350px; border-radius: 6px;">
+                        <div class="px-4">
+                            <p class="lead fst-italic mb-0">
+                             We are driven by <strong>precision, transparency, and accountability</strong> — helping our clients achieve accurate production data, minimize losses, 
+                            meet regulatory requirements, and enhance operational efficiency across all measurement and monitoring processes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side (About Text) -->
+                <div class="right-side col-lg-6">
+                    <h2 class="mb-3">About Core Measurement Limited </h2>
+                    <div class="fade-left">
+                        <p class="mb-3 ">
+                        A Nigerian-owned oil and gas service company specializing in <strong>measurement, monitoring, inspection, calibration,</strong> and <strong>metering solutions</strong> for the upstream, midstream, and downstream sectors of the energy industry.
+                        </p>
+                        <p class="mb-3">
+                        With over three decades of combined industry experience, we have established ourselves as a trusted provider of <strong>technical assurance, operational reliability,</strong> and <strong>production accountability</strong> for both local and international energy stakeholders.
+                        </p>
+                        <p class="mb-0">
+                        Core Measurement also offers <strong>technical training programs</strong> covering meter operation, flow measurement, data management, and equipment maintenance — ensuring continuous skills development and compliance with global metrology and petroleum measurement standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Qualities -->
+    <section class="qualities" id="qualities">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 px-5 py-5">
+                    <h2>Why Choose Us</h2>
+                    <p>
+                    We are dedicated to delivering <strong>precision, transparency, and accountability</strong> in every service we provide. 
+                    Our reputation as a trusted oil and gas service company is built on a foundation of technical integrity, operational excellence, and commitment to international metrology and petroleum measurement standards.
+                    <br><br>
+                    With a team of experienced engineers, technicians, and industry experts, we combine <strong>local knowledge with global expertise</strong> to deliver accurate and traceable results that support clients’ operational, commercial, and regulatory objectives.
+                    <br><br>
+                    We leverage advanced metering technologies, certified calibration standards, and strong technical partnerships in the United Kingdom and Europe to ensure <strong>measurement integrity, loss prevention, and production accountability</strong> across upstream, midstream, and downstream operations.
+                    <br><br>
+                    Whether it’s metering, calibration, inspection, or production monitoring, our clients choose Core Measurement because we deliver <strong>data they can trust</strong> — enabling efficiency, compliance, and confidence in every transaction.
+                </p>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-lg-6 px-5 py-5">
+                    <h2>Our Core Strengths</h2>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="info">
+                                <span>Technical Integrity & Measurement Accuracy</span>
+                            </div>
+                            <div class="progress-line quality1"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Operational Reliability & Timely Service Delivery</span>
+                            </div>
+                            <div class="progress-line quality2"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Regulatory & International Standards Compliance</span>
+                            </div>
+                            <div class="progress-line quality3"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Innovation in Metering & Monitoring Technology</span>
+                            </div>
+                            <div class="progress-line quality4"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Trusted Partnerships & Customer Confidence</span>
+                            </div>
+                            <div class="progress-line quality5"> <span></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Transparency, Safety & Professional Excellence</span>
+                            </div>
+                            <div class="progress-line quality6"> <span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Fun Fact Section -->
+    <section class="funfact py-5" id="funfact">
+        <div class="container">
+            <div class="row text-center gy-4">
+            
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=21>0</h1>
+                    <p class="mb-0">Completed Projects</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=32>0</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=15>0</h1>
+                    <p class="mb-0">Our Awards</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h1 class="display-5 fw-bold mb-1" data-target=3000>0</h1>
+                    <p class="mb-0">Satisfied Employees</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Fun Fact Section -->
+
+{% endblock %}
