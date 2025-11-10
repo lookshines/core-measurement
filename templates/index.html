@@ -26,7 +26,10 @@
                     </div>
                     <div class="carousel-item">
                         <img src="{% static 'images/hero/hero-image-6.jpg' %}" class="d-block w-100" alt="high-sea">
-                    </div>                   
+                    </div> 
+                    <div class="carousel-item">
+                        <img src="{% static 'images/hero/hero-image-7.jpg' %}" class="d-block w-100" alt="high-sea">
+                    </div> 
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -261,22 +264,22 @@
                     <form class="p-3 border rounded" method="POST">
                     {% csrf_token %}
                     <div class="mb-3">
-                        <label for="{{form.fullname_id_for_label}}" class="form-label">Name</label>
+                        <label for="{{ form.fullname_id_for_label }}" class="form-label">Name</label>
                         {{ form.fullname }}
                     </div>
 
                     <div class="mb-3">
-                        <label for="{{form.email_id_for_label}}" class="form-label">Email</label>
+                        <label for="{{ form.email_id_for_label }}" class="form-label">Email</label>
                         {{ form.email }}
                     </div>
 
                     <div class="mb-3">
-                        <label for="{{form.phone_id_for_label}}" class="form-label">Phone</label>
+                        <label for="{{ form.phone_id_for_label }}" class="form-label">Phone</label>
                         {{ form.phone }}
                     </div>
 
                     <div class="mb-3">
-                        <label for="{{form.message_id_for_label}}" class="form-label">Message</label>
+                        <label for="{{ form.message_id_for_label }}" class="form-label">Message</label>
                         {{ form.message }}
                     </div>
 
